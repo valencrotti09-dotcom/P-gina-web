@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trenzarte by juli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="inicio">
+        <a class="logo" href="#inicio">trenzarte <span>by juli</span></a>
+
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+        <nav class="nav-links">
+            <a class="nav-link active" href="#inicio">home</a>
+            <a class="nav-link" href="#marca">marca</a>
+            <a class="nav-link" href="#turnos">turnos</a>
+            <a class="nav-link" href="#precios">precios</a>
+            <a class="nav-link" href="#consultas">consultas</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+        <section class="hero gradient">
+            <div class="foto foto-izquierda">
+                <img src="img/trenzas1.jpg" alt="Trenzas cosidas">
+            </div>
+
+            <div class="hero-texto">
+                <p class="etiqueta">TRENZAS COSIDAS</p>
+                <h1>trenzarte</h1>
+                <h2 class="script">by juli</h2>
+                <p class="subtitulo">
+                    Trenzas cosidas<br>
+                    looks para <mark>cualquier ocasión!</mark>
+                </p>
+            </div>
+
+            <div class="foto foto-derecha">
+                <img src="img/trenzas2.jpg" alt="Diseño de trenzas">
+            </div>
+        </section>
+
+        <!-- MARCA -->
+        <section class="marca" id="marca">
+<div class="marca-arte">
+    <div class="linea"></div>
+    <div class="linea"></div>
+    <div class="linea"></div>
+</div>
+
+            <div class="marca-texto">
+                <p class="etiqueta">CONOCÉ NUESTRO ESPACIO</p>
+                <h2>¿Quiénes <mark class="script">somos?</mark></h2>
+                <p>
+                    ¡Hola! Soy Julieta Albornoz, dueña de Trenzarte by Juli. Soy estudiante de facultad, pero también manejo este emprendimiento. Nuestro objetivo es que todos nuestros clientes se vayan satisfechos, con peinados duraderos, prolijos y únicos.
+                </p>
+
+                <div class="nota">
+                    <p class="nota-titulo">✦ affirmation ✦</p>
+                    <p>
+                        You are not chopped, you are just in your own era.
+                        Your era can always change.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TURNOS -->
+        <section class="turnos gradient" id="turnos">
+            <div class="turnos-texto">
+                <p class="etiqueta">RESERVÁ TU MOMENTO</p>
+                <h2>Turnos para<br><mark class="script">tu look</mark></h2>
+                <p>
+                    ¿Te gustaría cambiar tu estilo? Agendá tu turno por WhatsApp 
+                </p>
+                <a class="boton" href="#consultas">Quiero un turno ↗</a>
+            </div>
+
+            <div class="foto-grande">
+                <img src="img/trenzas3.jpg" alt="Inspiración de peinado">
+            </div>
+
+            <div class="galeria">
+                <img src="img/look1.jpg" alt="Look de trenzas 1">
+                <img src="img/look2.jpg" alt="Look de trenzas 2">
+                <img src="img/look3.jpg" alt="Look de trenzas 3">
+                <img src="img/look4.jpg" alt="Look de trenzas 4">
+                <img src="img/look5.jpg" alt="Look de trenzas 5">
+                <img src="img/look6.jpg" alt="Look de trenzas 6">
+            </div>
+        </section>
+
+        <!-- PRECIOS -->
+        <section class="precios gradient" id="precios">
+            <div class="precios-texto">
+                <p class="etiqueta">ELEGÍ TU PRÓXIMO LOOK</p>
+                <h2><mark class="script">precios</mark></h2>
+                <p>
+                    Los precios varían según la complejidad del peinado que desees.
+                </p>
+
+                <div class="lista-precios">
+                    <p>Trenzas simples <strong>Consultar</strong></p>
+                    <p>Diseño personalizado <strong>Consultar</strong></p>
+                    <p>Trenzas con accesorios <strong>Consultar</strong></p>
+                </div>
+
+                <a class="boton" href="#consultas">Consultar precios ↗</a>
+            </div>
+
+            <div class="precios-foto">
+                <img src="img/trenzas4.jpg" alt="Inspiración para trenzas">
+                <div class="nota">
+                    <p class="nota-titulo">This year, it was...</p>
+                    <p>✦ confidence</p>
+                    <p>✦ speaking out</p>
+                    <p>✦ plans turning into memories</p>
+                    <p>✦ showing up for myself</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONSULTAS -->
+        <section class="consultas" id="consultas">
+            <div>
+                <p class="etiqueta">HABLEMOS DE TU PRÓXIMO LOOK</p>
+                <h2>¿Tenés alguna <mark class="script">consulta?</mark></h2>
+                <p>
+                    Completá el formulario y contame qué diseño te gustaría
+                    hacerte.
+                </p>
+            </div>
+
+            <form id="formulario">
+                <label for="nombre">Tu nombre</label>
+                <input type="text" id="nombre" placeholder="¿Cómo te llamás?" required>
+
+                <label for="tipo">¿Qué querés consultar?</label>
+                <select id="tipo">
+                    <option>Turnos</option>
+                    <option>Precios</option>
+                    <option>Diseños</option>
+                    <option>Otra consulta</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="4" placeholder="Contame tu idea..."></textarea>
+
+                <button class="boton" type="submit">Enviar consulta ↗</button>
+                <p id="respuesta"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#inicio">trenzarte <span>by Juli</span></a>
+        <p>Hecho con amor y mucho estilo ✦</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
